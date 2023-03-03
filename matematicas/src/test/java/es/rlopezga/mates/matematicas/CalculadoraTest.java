@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class CalculadoraTest {
+public class CalculadoraTest {
 	private Calculadora calculadora;
 	private Calculadora calculadora1;
 	private Calculadora calculadora2;
@@ -36,7 +36,7 @@ class CalculadoraTest {
 	@Test
 	void testSolucion2Correcta() {
 		Assertions.assertEquals(calculadora1.solucion2(1, -5, 6), 2);
-		Assertions.assertEquals(calculadora2.solucion2(2, -7, 3), 1/2);
+		Assertions.assertEquals(calculadora2.solucion2(2, -7, 3), 0.5);
 		Assertions.assertEquals(calculadora3.solucion2(-1, -7, -10), -2);
 	}
 	
@@ -71,9 +71,7 @@ class CalculadoraTest {
 	void testPrimoIncorrecto() {
 		Assertions.assertThrows(IllegalArgumentException.class, ()->calculadora1.esPrimo(-1));
 		Assertions.assertThrows(IllegalArgumentException.class, ()->calculadora2.esPrimo(0));
-		Assertions.assertThrows(IllegalArgumentException.class, ()->calculadora3.esPrimo(1));
-	
-		
+		Assertions.assertThrows(IllegalArgumentException.class, ()->calculadora3.esPrimo(1));		
 	}
 	
 }
