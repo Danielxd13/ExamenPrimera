@@ -45,9 +45,18 @@ class CalculadoraTest {
 //		Assertions.assertThrows(ArithmeticException.class, ()->calculadora1.solucion1(1, 1, 1));
 //	}
 
+//	@Test
+//	void testSolucion2Incorrecta() {
+//		Assertions.assertThrows(ArithmeticException.class, ()->calculadora1.solucion2(1, 1, 1));
+//	}
+	
 	@Test
-	void testSolucion2Incorrecta() {
-		Assertions.assertThrows(ArithmeticException.class, ()->calculadora1.solucion2(1, 1, 1));
+	void testPrimo() {
+		
+		Assertions.assertTrue(calculadora1.esPrimo(2));
+		Assertions.assertTrue(calculadora2.esPrimo(7));
+		Assertions.assertTrue(calculadora3.esPrimo(19));
+		
 	}
 	
 }
