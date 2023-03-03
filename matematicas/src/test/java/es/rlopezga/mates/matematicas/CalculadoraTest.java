@@ -40,9 +40,14 @@ class CalculadoraTest {
 //		Assertions.assertNotEquals(calculadora3.solucion2(-1, -7, -10), -2);
 //	}
 	
-	@Test
-	void testSolucion1Incorrecta() {
-		Assertions.assertThrows(ArithmeticException.class, ()->calculadora1.solucion1(1, 1, 1));
-	}
+//	@Test
+//	void testSolucion1Incorrecta() {
+//		Assertions.assertThrows(ArithmeticException.class, ()->calculadora1.solucion1(1, 1, 1));
+//	}
 
+	@Test
+	void testSolucion2Incorrecta() {
+		Assertions.assertThrows(ArithmeticException.class, ()->calculadora1.solucion2(1, 1, 1));
+	}
+	
 }
