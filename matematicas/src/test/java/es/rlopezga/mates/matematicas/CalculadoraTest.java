@@ -35,9 +35,9 @@ class CalculadoraTest {
 	}
 	@Test
 	void testSolucion2Correcta() {
-		Assertions.assertNotEquals(calculadora1.solucion2(1, -5, 6), 2);
-		Assertions.assertNotEquals(calculadora2.solucion2(2, -7, 3), 1/2);
-		Assertions.assertNotEquals(calculadora3.solucion2(-1, -7, -10), -2);
+		Assertions.assertEquals(calculadora1.solucion2(1, -5, 6), 2);
+		Assertions.assertEquals(calculadora2.solucion2(2, -7, 3), 1/2);
+		Assertions.assertEquals(calculadora3.solucion2(-1, -7, -10), -2);
 	}
 	
 	@Test
