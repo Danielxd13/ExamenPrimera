@@ -31,7 +31,7 @@ public class Calculadora {
 	 */
 	public double solucion2(int a, int b, int c) throws ArithmeticException {
 		double d = b * b - 4.0 * a * c;  
-		if (d> 0.0) {  
+		if (d > 0.0) {  
 		   return (-b + Math.pow(d, 0.5)) / (2.0 * a);  
 		} else {
 			throw new ArithmeticException("La solución no es un número real");
@@ -46,8 +46,8 @@ public class Calculadora {
 	 */
 	public boolean esPrimo(int n) throws IllegalArgumentException {
 		if (n <= 1) {
+			throw new IllegalArgumentException("no se puede poner ningun numero <=1");
 			// el número es menor que 1, por lo tanto no es primo.
-			return false;
 		} else {
 			for (int i = 2; i<= n/2; i++) {
 				if ((n % i) == 0) {
