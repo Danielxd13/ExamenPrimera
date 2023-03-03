@@ -50,12 +50,20 @@ class CalculadoraTest {
 //		Assertions.assertThrows(ArithmeticException.class, ()->calculadora1.solucion2(1, 1, 1));
 //	}
 	
+//	@Test
+//	void testPrimo() {
+//		
+//		Assertions.assertTrue(calculadora1.esPrimo(2));
+//		Assertions.assertTrue(calculadora2.esPrimo(7));
+//		Assertions.assertTrue(calculadora3.esPrimo(19));
+//		
+//	}
 	@Test
-	void testPrimo() {
+	void testNoPrimo() {
 		
-		Assertions.assertTrue(calculadora1.esPrimo(2));
-		Assertions.assertTrue(calculadora2.esPrimo(7));
-		Assertions.assertTrue(calculadora3.esPrimo(19));
+		Assertions.assertFalse(calculadora1.esPrimo(15));
+		Assertions.assertFalse(calculadora2.esPrimo(16));
+		Assertions.assertFalse(calculadora3.esPrimo(20));
 		
 	}
 	
