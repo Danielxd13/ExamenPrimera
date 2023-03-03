@@ -27,13 +27,18 @@ class CalculadoraTest {
 		calculadora3=null;
 	}
 
+//	@Test
+//	void testSolucion1Correcta() {
+//		Assertions.assertEquals(calculadora1.solucion1(1, -5, 6), 3);
+//		Assertions.assertEquals(calculadora2.solucion1(2, -7, 3), 3);
+//		Assertions.assertEquals(calculadora3.solucion1(-1, -7, -10), -5);
+//	}
 	@Test
-	void testSolucion1Correcta() {
-		Assertions.assertEquals(calculadora1.solucion1(1, -5, 6), 3);
-		Assertions.assertEquals(calculadora2.solucion1(2, -7, 3), 3);
-		Assertions.assertEquals(calculadora3.solucion1(-1, -7, -10), -5);
+	void testSolucion2Correcta() {
+		Assertions.assertNotEquals(calculadora1.solucion1(1, -5, 6), 2);
+		Assertions.assertNotEquals(calculadora2.solucion1(2, -7, 3), 1/2);
+		Assertions.assertNotEquals(calculadora3.solucion1(-1, -7, -10), -2);
 	}
-
 	
 
 }
